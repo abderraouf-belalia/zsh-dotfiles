@@ -1,6 +1,7 @@
-ZSH_FUNCTIONS=~/.config/zsh/functions
+CUSTOM_FUNCTIONS="~/.config/zsh/functions"
 
-# Github shortcuts
-autoload pull
-autoload push
-autoload fetch
+FPATH=$CUSTOM_FUNCTIONS:$FPATH
+
+autoload -U pull
+autoload -U push
+autoload -U fetch

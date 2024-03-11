@@ -55,7 +55,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Which plugins would you like to load? Standard plugins can be found in $ZSH/plugins/ Custom plugins may be 
 # added to $ZSH_CUSTOM/plugins/ Example format: plugins=(rails git textmate ruby lighthouse) Add wisely, as too 
 # many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+# Loads extended configuration
+source ~/.config/zsh/init.zsh

@@ -1,4 +1,4 @@
-ZSH_CONFIG=$HOME"/.config/zsh"
+ZSH_CONFIG=~/.config/zsh
 
 source $ZSH_CONFIG"/variables.zsh"
 source $ZSH_CONFIG"/options.zsh"
@@ -7,4 +7,4 @@ source $ZSH_CONFIG"/options.zsh"
 source $ZSH_CONFIG"/functions/init.zsh"
 source $ZSH_CONFIG"/aliases.zsh"
 
-source $ZSH_CONFIG"/appearance.zsh"
+source $ZSH_CONFIG"/startup.zsh"

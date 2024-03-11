@@ -2,9 +2,6 @@
 alias home="cd ~"
 alias back="cd -"
 
-# GIT ALIASES
-alias push=gitpush
-alias pull=gitpull
-alias fetch=gitfetch
-
-
+# ACTION
+alias edit=$EDITOR
+alias reload="source ~/.zshrc"
