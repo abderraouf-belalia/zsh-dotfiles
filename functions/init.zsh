@@ -1,4 +1,4 @@
-CUSTOM_FUNCTIONS="~/.config/zsh/functions"
+CUSTOM_FUNCTIONS="$HOME/.config/zsh/functions"
 
 FPATH=$CUSTOM_FUNCTIONS:$FPATH
 
