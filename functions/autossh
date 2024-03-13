@@ -1,0 +1,18 @@
+#!/usr/bin/expect
+
+set args [regexp -all -inline {\S+} $argv]
+
+set user [lindex $args 0]
+set host [lindex $args 1]
+set pass [lindex $args 2]
+
+spawn ssh $user@$host
+
+expect "Are you sure you want to continue connecting (yes/no/\[fingerprint\])?"
+send "yes
+"
+expect "password:"
+send "$pass
+"
+expect "$ "
+interact # This gives us the control
